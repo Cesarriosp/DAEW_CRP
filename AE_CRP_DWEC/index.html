@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Gestor de Biblioteca</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h2>Biblioteca de César</h2>
+
+  <section class="card">
+    <h3>Agregar Libro</h3>
+    <input id="titulo" placeholder="Título">
+    <input id="autor" placeholder="Autor">
+    <input id="anio" type="number" placeholder="Año">
+    <input id="genero" placeholder="Género">
+    <input id="isbn" placeholder="ISBN">
+    <button id="btnAgregar">Añadir</button>
+  </section>
+
+  <section class="card">
+    <h3>Buscar Libro</h3>
+    <input id="buscar" placeholder="Título o ISBN">
+    <button id="btnBuscar">Buscar</button>
+  </section>
+
+  <section class="card">
+    <h3>Eliminar Libro</h3>
+    <input id="eliminar" placeholder="ISBN">
+    <button id="btnEliminar">Eliminar</button>
+  </section>
+
+  <section class="card">
+    <h3>Listado de Libros</h3>
+    <button id="btnListar">Listar</button>
+    <table id="tablaLibros" border="1"></table>
+  </section>
+
+  <section class="card">
+    <h3>Estadísticas</h3>
+    <button id="btnEstadisticas">Mostrar estadísticas</button>
+    <pre id="stats"></pre>
+  </section>
+
+  <p id="mensaje" class="mensaje"></p>
+
+  <script defer src="app.js"></script>
+</body>
+</html>
+
